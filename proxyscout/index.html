@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ProxyScout — Proxy Finder &amp; Switcher</title>
+  <meta name="title-en" content="ProxyScout — Proxy Finder & Switcher">
+  <meta name="title-tr" content="ProxyScout — Proxy Bulucu ve Değiştirici">
+  <meta name="description" content="ProxyScout is a free, open-source browser extension for Chrome and Edge that downloads free proxy lists, tests them and routes your browser through a working proxy in one click.">
+  <link rel="icon" href="assets/icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/lang.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="./"><img src="assets/icon.png" alt="">ProxyScout</a>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">English</button>
+        <button type="button" data-lang="tr" aria-pressed="false">Türkçe</button>
+      </div>
+    </header>
+
+    <!-- ===================== ENGLISH ===================== -->
+    <main lang-block="en" lang="en">
+      <div class="hero">
+        <h1>ProxyScout — Proxy Finder &amp; Switcher</h1>
+        <p class="lead">A free, open-source browser extension for Chrome and Edge. It downloads free proxy lists from dozens of sources, really tests every proxy and routes your browser through a working one in one click. One more click turns it off.</p>
+        <div class="btns">
+          <a class="btn primary" href="https://github.com/Halil-KAPLAN/ProxyScout/releases/latest">Download from GitHub</a>
+          <span class="btn">Chrome Web Store <small>— in review</small></span>
+          <span class="btn">Edge Add-ons <small>— in review</small></span>
+        </div>
+        <div class="shot"><img src="assets/en/01-list.png" width="1280" height="800" alt="ProxyScout manager page listing tested, working proxies by anonymity level"></div>
+      </div>
+
+      <section>
+        <h2>What it does</h2>
+        <div class="grid">
+          <div class="card"><h3>Finds working proxies</h3><p>21 built-in sources plus your own list URLs. Every proxy is tested over HTTP and with two HTTPS connections, so only proxies that load real websites are kept.</p></div>
+          <div class="card"><h3>Sorted by anonymity</h3><p>Elite + HTTPS, Elite, HTTPS, Anonymous and Transparent groups, with country flag, city, latency and uptime.</p></div>
+          <div class="card"><h3>One-click connect</h3><p>Connect from the popup, turn it off with one switch. The toolbar icon shows the state, and auto switch moves to the best proxy if the current one dies.</p></div>
+          <div class="card"><h3>Same list everywhere</h3><p>Optional sync through your browser account or your own Google Drive, so the list you built shows up in all your browsers.</p></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Screenshots</h2>
+        <div class="shots">
+          <img src="assets/en/02-popup.png" width="1280" height="800" alt="Popup: connect in one click, turn off in one click" loading="lazy">
+          <img src="assets/en/03-cats.png" width="1280" height="800" alt="Proxies sorted by anonymity level" loading="lazy">
+        </div>
+      </section>
+
+      <section class="prose">
+        <h2>Google sign-in and your data</h2>
+        <p>Signing in with Google is <strong>optional</strong> and only used for Google Drive sync. When you click “Sign in with Google”, ProxyScout asks for:</p>
+        <ul>
+          <li><code>drive.appdata</code> — to save one sync file (working proxies, favorites, your own proxies, source choices and settings) in a hidden app folder in <em>your</em> Google Drive. The extension cannot see any other Drive files.</li>
+          <li><code>email</code> and <code>openid</code> — only to show which Google account is connected.</li>
+        </ul>
+        <p>The developer runs no servers and never receives this data. It is used only for sync, is not shared, sold or used for advertising, and you can disconnect at any time. Use of Google user data complies with the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Details: <a href="privacy.html">Privacy policy</a>.</p>
+        <p class="note">Free public proxies are run by third parties and are not trustworthy. While connected they can see or modify unencrypted (http://) traffic. Do not use them for logins or sensitive tasks.</p>
+      </section>
+    </main>
+
+    <!-- ===================== TÜRKÇE ===================== -->
+    <main lang-block="tr" lang="tr">
+      <div class="hero">
+        <h1>ProxyScout — Proxy Bulucu ve Değiştirici</h1>
+        <p class="lead">Chrome ve Edge için ücretsiz ve açık kaynak bir tarayıcı eklentisi. Onlarca kaynaktan ücretsiz proxy listelerini indirir, her birini gerçekten test eder ve tek tıkla tarayıcınızı çalışan bir proxy'ye yönlendirir. Bir tıkla da kapatırsınız.</p>
+        <div class="btns">
+          <a class="btn primary" href="https://github.com/Halil-KAPLAN/ProxyScout/releases/latest">GitHub'dan indir</a>
+          <span class="btn">Chrome Web Store <small>— incelemede</small></span>
+          <span class="btn">Edge Add-ons <small>— incelemede</small></span>
+        </div>
+        <div class="shot"><img src="assets/tr/01-list.png" width="1280" height="800" alt="ProxyScout yönetici sayfası: test edilmiş, çalışan proxy'ler gizlilik düzeyine göre listeleniyor"></div>
+      </div>
+
+      <section>
+        <h2>Ne yapar?</h2>
+        <div class="grid">
+          <div class="card"><h3>Çalışan proxy'leri bulur</h3><p>21 hazır kaynak ve kendi liste adresleriniz. Her proxy HTTP ve iki ayrı HTTPS bağlantısıyla test edilir; yalnızca gerçek siteleri açabilenler kalır.</p></div>
+          <div class="card"><h3>Gizlilik düzeyine göre ayırır</h3><p>Elit + HTTPS, Elit, HTTPS, Anonim ve Şeffaf grupları; ülke bayrağı, şehir, gecikme ve başarı oranıyla.</p></div>
+          <div class="card"><h3>Tek tıkla bağlanır</h3><p>Popup'tan bağlanın, tek anahtarla kapatın. Araç çubuğu ikonu durumu gösterir; otomatik geçiş, bağlı proxy ölürse en iyisine geçer.</p></div>
+          <div class="card"><h3>Her yerde aynı liste</h3><p>İsteğe bağlı olarak tarayıcı hesabınız ya da kendi Google Drive'ınız üzerinden senkron; hazırladığınız liste tüm tarayıcılarınızda görünür.</p></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Ekran görüntüleri</h2>
+        <div class="shots">
+          <img src="assets/tr/02-popup.png" width="1280" height="800" alt="Popup: tek tıkla bağlan, tek tıkla kapat" loading="lazy">
+          <img src="assets/tr/03-cats.png" width="1280" height="800" alt="Gizlilik düzeyine göre kategoriler" loading="lazy">
+        </div>
+      </section>
+
+      <section class="prose">
+        <h2>Google ile giriş ve verileriniz</h2>
+        <p>Google ile giriş <strong>isteğe bağlıdır</strong> ve yalnızca Google Drive senkronu için kullanılır. "Google ile bağlan"a bastığınızda ProxyScout şu izinleri ister:</p>
+        <ul>
+          <li><code>drive.appdata</code> — senkron dosyasını (çalışan proxy'ler, favoriler, kendi proxy'leriniz, kaynak seçimleri ve ayarlar) <em>sizin</em> Google Drive'ınızdaki gizli uygulama klasörüne kaydetmek için. Eklenti Drive'daki diğer dosyalarınızı göremez.</li>
+          <li><code>email</code> ve <code>openid</code> — yalnızca hangi Google hesabıyla bağlı olduğunuzu göstermek için.</li>
+        </ul>
+        <p>Geliştiricinin hiçbir sunucusu yoktur ve bu verilere hiçbir zaman erişmez. Veriler yalnızca senkron için kullanılır; paylaşılmaz, satılmaz, reklam için kullanılmaz ve bağlantıyı istediğiniz zaman kaldırabilirsiniz. Google kullanıcı verilerinin kullanımı, Sınırlı Kullanım (Limited Use) koşulları dahil, <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Hizmetleri Kullanıcı Verileri Politikası</a>'na uygundur. Ayrıntılar: <a href="privacy.html">Gizlilik politikası</a>.</p>
+        <p class="note">Ücretsiz/açık proxy'ler üçüncü kişilerce işletilir ve güvenilir değildir. Bağlıyken şifrelenmemiş (http://) trafiğinizi görebilir veya değiştirebilirler. Şifre girdiğiniz ya da hassas işlem yaptığınız sitelerde kullanmayın.</p>
+      </section>
+    </main>
+
+    <footer>
+      <span lang-block="en">ProxyScout is open source (GPL-3.0). Developer: Halil KAPLAN · <a href="privacy.html">Privacy policy</a> · <a href="https://github.com/Halil-KAPLAN/ProxyScout">Source code</a> · <a href="https://github.com/Halil-KAPLAN/ProxyScout/issues">Support</a></span>
+      <span lang-block="tr">ProxyScout açık kaynaktır (GPL-3.0). Geliştirici: Halil KAPLAN · <a href="privacy.html">Gizlilik politikası</a> · <a href="https://github.com/Halil-KAPLAN/ProxyScout">Kaynak kod</a> · <a href="https://github.com/Halil-KAPLAN/ProxyScout/issues">Destek</a></span>
+    </footer>
+  </div>
+</body>
+</html>
