@@ -49,7 +49,8 @@
 
       <h2>Sync (optional)</h2>
       <ul>
-        <li><em>Browser sync</em>: a summary (working proxies, favorites, your proxies, source choices, settings) is stored in the sync storage (<code>chrome.storage.sync</code>) of the account you are signed in to the browser with. It can be turned off in Settings.</li>
+        <li><em>Browser sync</em>: a summary (working proxies, favorites, your proxies, source choices, settings) is stored in the sync storage (<code>chrome.storage.sync</code>) of the account you are signed in to the browser with (Google account in Chrome, Mozilla account in Firefox). It can be turned off in Settings.</li>
+        <li><em>Firefox</em>: the usernames/passwords of proxies you added are written to sync only if you grant Firefox's optional "authentication information" data permission; otherwise they stay on this device.</li>
         <li><em>Google Drive</em>: if you click "Sign in with Google", the same summary is stored as one file in a hidden app folder in your Google Drive that only this extension can access (<code>drive.appdata</code>). The extension also reads your account e-mail address (<code>email</code>, <code>openid</code>) to show which account is connected, and cannot see your other Drive files. The access token is kept in memory for the browser session only. You can revoke access with "Disconnect" or at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
         <li>Use of Google user data complies with the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements: the data is used only for sync, is not transferred, is not used for advertising and is not read by humans.</li>
       </ul>
@@ -92,7 +93,8 @@
 
       <h2>Senkronizasyon (isteğe bağlı)</h2>
       <ul>
-        <li><em>Tarayıcı senkronu</em>: Özet (çalışan proxy'ler, favoriler, kendi proxy'leriniz, kaynak seçimleri, ayarlar), tarayıcıya giriş yaptığınız hesabın senkron alanında (<code>chrome.storage.sync</code>) saklanır. Ayarlar'dan kapatılabilir.</li>
+        <li><em>Tarayıcı senkronu</em>: Özet (çalışan proxy'ler, favoriler, kendi proxy'leriniz, kaynak seçimleri, ayarlar), tarayıcıya giriş yaptığınız hesabın (Chrome'da Google, Firefox'ta Mozilla hesabı) senkron alanında (<code>chrome.storage.sync</code>) saklanır. Ayarlar'dan kapatılabilir.</li>
+        <li><em>Firefox</em>: Kendi eklediğiniz proxy'lerin kullanıcı adı/şifresi, yalnızca Firefox'un isteğe bağlı "kimlik doğrulama bilgisi" veri iznini verirseniz senkrona yazılır; vermezseniz yalnızca bu cihazda kalır.</li>
         <li><em>Google Drive</em>: "Google ile bağlan" derseniz aynı özet, Google Drive'ınızda yalnızca bu eklentinin erişebildiği gizli uygulama klasöründe (<code>drive.appdata</code>) tek bir dosya olarak tutulur. Eklenti yalnızca bu klasöre ve hesabınızın e-posta adresine (<code>email</code>, <code>openid</code>; hangi hesapla bağlı olduğunuzu göstermek için) erişir; Drive'daki diğer dosyalarınızı göremez. Erişim anahtarı yalnızca tarayıcı oturumu boyunca bellekte tutulur. "Bağlantıyı kaldır" ile izin geri alınır; ayrıca <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> adresinden de kaldırabilirsiniz.</li>
         <li>Google kullanıcı verilerinin kullanımı, Sınırlı Kullanım (Limited Use) koşulları dahil, <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Hizmetleri Kullanıcı Verileri Politikası</a>'na uygundur: veriler yalnızca senkronizasyon için kullanılır, aktarılmaz, reklam için kullanılmaz ve insanlar tarafından okunmaz.</li>
       </ul>
