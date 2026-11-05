@@ -24,7 +24,7 @@
     <!-- ===================== ENGLISH ===================== -->
     <main class="prose" lang-block="en" lang="en">
       <h1>ProxyScout — Privacy Policy</h1>
-      <p><em>Last updated: 19.10.2026</em></p>
+      <p><em>Last updated: 05.11.2026</em></p>
 
       <p>ProxyScout is a browser extension that downloads free proxy lists, tests them and routes browser traffic through the proxy the user selects. The developer runs no servers; the extension <strong>does not send, sell or share any personal data with the developer</strong> and contains no ads or analytics.</p>
 
@@ -41,11 +41,15 @@
             <tr><td>httpbin.org, Cloudflare (<code>*.cloudflareaccess.com/cdn-cgi/trace</code>)</td><td>Testing whether a proxy works and its anonymity level</td><td>Test request (through the proxy)</td></tr>
             <tr><td>ip-api.com</td><td>Country/city of working proxies</td><td>The proxies' IP addresses</td></tr>
             <tr><td>api.ipify.org, icanhazip.com</td><td>"Show my IP" and connection checks</td><td>Standard HTTP request</td></tr>
+            <tr><td>Google STUN server (<code>stun.l.google.com</code>)</td><td>Only in the privacy check under "Show my IP": seeing whether WebRTC reveals your real IP</td><td>Standard WebRTC/STUN request (one any web page can make)</td></tr>
             <tr><td>The proxy server you choose</td><td>While connected, your browser traffic goes through it</td><td>Browsing traffic</td></tr>
             <tr><td>Google (only if you turn on sync)</td><td>Moving the list between your devices</td><td>See below</td></tr>
           </tbody>
         </table>
       </div>
+
+      <h2>WebRTC protection (optional)</h2>
+      <p>If you turn it on, the extension asks for the browser's optional "privacy" permission and, only while the proxy is on, sets the browser's WebRTC policy to "disable non-proxied UDP"; the setting is restored when the proxy is turned off. The permission is not used to access any other data.</p>
 
       <h2>Sync (optional)</h2>
       <ul>
@@ -68,7 +72,7 @@
     <!-- ===================== TÜRKÇE ===================== -->
     <main class="prose" lang-block="tr" lang="tr">
       <h1>ProxyScout — Gizlilik Politikası</h1>
-      <p><em>Son güncelleme: 19.10.2026</em></p>
+      <p><em>Son güncelleme: 05.11.2026</em></p>
 
       <p>ProxyScout, ücretsiz proxy listelerini indirip test eden ve tarayıcı trafiğini kullanıcının seçtiği proxy'ye yönlendiren bir tarayıcı eklentisidir. Geliştiricinin hiçbir sunucusu yoktur; eklenti <strong>hiçbir kişisel veriyi geliştiriciye göndermez, satmaz veya paylaşmaz</strong>, reklam ya da analiz (izleme) aracı içermez.</p>
 
@@ -85,11 +89,15 @@
             <tr><td>httpbin.org, Cloudflare (<code>*.cloudflareaccess.com/cdn-cgi/trace</code>)</td><td>Proxy'nin çalışıp çalışmadığını ve gizlilik düzeyini test etme</td><td>Test isteği (proxy üzerinden)</td></tr>
             <tr><td>ip-api.com</td><td>Çalışan proxy'lerin ülke/şehir bilgisi</td><td>Proxy'lerin IP adresleri</td></tr>
             <tr><td>api.ipify.org, icanhazip.com</td><td>"IP'mi göster" ve bağlantı doğrulama</td><td>Standart HTTP isteği</td></tr>
+            <tr><td>Google STUN sunucusu (<code>stun.l.google.com</code>)</td><td>Yalnızca "IP'mi göster" → gizlilik kontrolünde: WebRTC'nin gerçek IP'nizi gösterip göstermediğini anlamak</td><td>Standart WebRTC/STUN isteği (her web sayfasının yapabildiği gibi)</td></tr>
             <tr><td>Seçtiğiniz proxy sunucusu</td><td>Siz bağlandığınızda tarayıcı trafiğiniz bu sunucudan geçer</td><td>Gezinme trafiği</td></tr>
             <tr><td>Google (yalnızca senkronizasyonu açarsanız)</td><td>Listeyi cihazlarınız arasında taşımak</td><td>Aşağıya bakın</td></tr>
           </tbody>
         </table>
       </div>
+
+      <h2>WebRTC koruması (isteğe bağlı)</h2>
+      <p>Açarsanız eklenti tarayıcının isteğe bağlı "privacy" iznini ister ve yalnızca proxy açıkken tarayıcının WebRTC ayarını "proxy'siz UDP'yi kapat" olarak değiştirir; proxy kapanınca ayar eski haline döner. Bu izin başka hiçbir veriye erişmek için kullanılmaz.</p>
 
       <h2>Senkronizasyon (isteğe bağlı)</h2>
       <ul>
